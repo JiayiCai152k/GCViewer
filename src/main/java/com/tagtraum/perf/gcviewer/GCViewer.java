@@ -16,8 +16,6 @@ import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFrame;
-import java.awt.GraphicsEnvironment;
 
 /**
  * Main class of GCViewer. Parses command line parameters if there are any and either remains
@@ -42,10 +40,6 @@ public class GCViewer {
     }
 
     public static void main(final String[] args) throws InvocationTargetException, InterruptedException {
-        if (!GraphicsEnvironment.isHeadless()) {
-            JFrame frame = new JFrame("test");
-            frame.setVisible(true);
-        }
         int exitValue = new GCViewer().doMain(args);
         if (exitValue != 0) {
             System.exit(exitValue);
