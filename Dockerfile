@@ -15,5 +15,5 @@ VOLUME /tmp/.X11-unix
 # $ docker build . -t gcv
 # $ docker run -d gcv
 # output the container id
-# $ docker cp [container id]:/home/app/target/gcviewer-1.37-SNAPSHOT.jar .
+# $ docker cp [container id]:/usr/local/lib/gcviewer-1.37-SNAPSHOT.jar .
 # $ java -jar gcviewer-1.37-SNAPSHOT.jar
