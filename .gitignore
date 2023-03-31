@@ -10,3 +10,5 @@
 /*.txt
 /*.iml
 /.idea/
+/gcviewer-1.37-SNAPSHOT.jar
+/DockerFile
